@@ -1,0 +1,15 @@
+# Ignore packages
+/.bundle
+/Gemfile.lock
+/node_modules
+/bower_components
+
+# Ignore the build directory
+/build
+
+# Ignore cache
+/.sass-cache
+/.cache
+
+# Ignore system files
+.DS_Store

@@ -1,0 +1,12 @@
+{
+  "name": "middleman-noir",
+  "version": "0.0.0",
+  "dependencies": {
+      "stylus": "latest",
+      "nib": "latest",
+      "jeet": "latest",
+      "rupture": "latest",
+      "bower": "latest",
+      "autoprefixer-stylus": "latest"
+  }
+}
