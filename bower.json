@@ -2,6 +2,8 @@
   "name": "middleman-noir",
   "version": "0.0.0",
   "dependencies": {
-    "normalize-css": "latest"
+    "normalize-css": "latest",
+    "retina.js": "latest",
+    "svgeezy": "latest"
   }
 }

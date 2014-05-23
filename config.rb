@@ -1,4 +1,4 @@
-Stylus.use('jeet', 'rupture', 'axis-css', 'autoprefixer-stylus')
+Stylus.use('jeet', 'rupture', 'nib', 'autoprefixer-stylus')
 
 set :images_dir, 'images'
 set :css_dir, 'stylesheets'
