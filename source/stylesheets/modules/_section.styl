@@ -1,19 +1,39 @@
+.section
+  padding 40px 0
+  position relative
+
+  .container
+    position relative
+    z-index 5
+
+  *:first-child
+    margin-top 0
+
 .section-gray
-  background gray
+  @extend .section
+  background grayDark
   color white
   text-align center
 
-  h1
-    color orange
-    font-size 50px
-    line-height 1
-    margin 0
+  &:after
+    fullsize-after()
+    background image-url('noir-typewriter.jpeg')
+    opacity 0.05
 
-  p
-    font-knockout-28()
-    font-size 30px
-    line-height 40px
-    margin 5px 0
+.section-white
+  @extend .section
+
+.section-orage
+  @extend .section
+  background orange
+
+  &:after
+    fullsize-after()
+    background image-url('noir-typewriter.jpeg')
+    opacity 0.05
+
+  h2
+    color white
 
 .section-full, & .container
   height 100%

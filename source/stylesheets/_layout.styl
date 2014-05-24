@@ -1,2 +1,21 @@
 .container
-  center 960px 20px
+  center 960px 40px
+
+.vertical-center
+  position relative
+  top 50%
+  transform translateY(-50%)
+
+.center-column
+  column(2/3, offset: 1/6)
+  +tablet()
+    stack()
+
+.read-more
+  font-knockout-28()
+  font-size 20px
+  letter-spacing 1px
+
+  position absolute
+  bottom 40px
+  width 100%

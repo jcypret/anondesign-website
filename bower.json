@@ -4,6 +4,8 @@
   "dependencies": {
     "normalize-css": "latest",
     "retina.js": "latest",
-    "svgeezy": "latest"
+    "svgeezy": "latest",
+    "jquery.unorphan": "rstacruz/jquery.unorphan",
+    "jquery-autosize": "latest"
   }
 }
