@@ -6,11 +6,14 @@ set :js_dir, 'javascripts'
 set :fonts_dir, 'fonts'
 set :partials_dir, 'partials'
 
-activate :title
+activate :title, site: 'Anonymous Design'
 activate :directory_indexes
 
 # Add bower_components folder to Sprockets path
 sprockets.append_path File.join(root, 'bower_components')
+
+require 'helpers/custom_helpers'
+helpers CustomHelpers
 
 configure :development do
 	activate :livereload

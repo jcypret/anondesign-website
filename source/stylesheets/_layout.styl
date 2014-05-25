@@ -1,5 +1,7 @@
 .container
   center 960px 40px
+  +mobile()
+    center 960px 20px
 
 .vertical-center
   position relative
@@ -8,7 +10,7 @@
 
 .center-column
   column(2/3, offset: 1/6)
-  +tablet()
+  +mobile()
     stack()
 
 .read-more
@@ -19,3 +21,16 @@
   position absolute
   bottom 40px
   width 100%
+
+  +mobile()
+    bottom 20px
+    font-size 15px
+
+.background-video
+  margin-top -(header-height)
+  position fixed
+  min-width 100%
+  min-height 100%
+  background-size cover
+  background-image url('../videos/noir-loop.jpg')
+  z-index -1

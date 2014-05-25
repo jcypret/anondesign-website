@@ -1,12 +1,20 @@
+---
+title: We build websites, establish branding, and design things for our clients.
+---
+
+video autoplay=true loop=true class='background-video'
+  source src='videos/noir-loop.webm' type='video/webm'
+  source src='videos/noir-loop.mp4' type='video/mp4'
+
 section.section-gray.section-full
   .container
     .vertical-center
       h1 Website design and digital marketing
       p.subtitle We build websites, establish branding, and design things for our clients.
   div.read-more
-    | Read More<br>
-    = image_tag 'down-arrow.svg'
-
+    | Read More
+    br
+    = svg_tag 'down-arrow.svg'
 
 section.section-white
   .container
@@ -15,15 +23,15 @@ section.section-white
 
     .service
       .service-icon
-        = image_tag 'icons/browser.svg'
+        = svg_tag 'icons/browser.svg'
       .service-content
         h3 Website Design and Development
         p.subtitle We create a space for you on the internet.
-        p We design websites that produce results. Whether you need a simple website to advertise your business or complex web application to that will change the world, we will work with you to take your ideas from conception to reality.
+        p We design websites that produce results. Whether you need a website to grow your business or a web application to serve your clients, we will work with you to take your ideas from conception to reality.
 
     .service
       .service-icon
-        = image_tag 'icons/brochure.svg'
+        = svg_tag 'icons/brochure.svg'
       .service-content
         h3 Graphic Design and Printing
         p.subtitle We design brochures and print them too.
@@ -31,7 +39,7 @@ section.section-white
 
     .service
       .service-icon
-        = image_tag 'icons/identity.svg'
+        = svg_tag 'icons/identity.svg'
       .service-content
         h3 Branding and Identity
         p.subtitle We imagine and create memorable logos.
@@ -39,37 +47,41 @@ section.section-white
 
     .service
       .service-icon
-        = image_tag 'icons/search.svg'
+        = svg_tag 'icons/search.svg'
       .service-content
         h3 Marketing and Search (SEO)
         p.subtitle We make sure people can find you.
         p This is one of the most important aspects for reaching your customers. You may have the best looking company in town, but that does not matter if no one sees it. Marketing is the process of making your company available to potential customers and also taking care of your existing clients.
 
-section.section-orage
+section.section-orange
   .container
     h2 Hire Us
-    .center-column
-      form
-        label for='first_name' What is your name?
-        input type='text' id='first_name'
 
-        label for='email' What is your email address?
-        input type='email' id='email'
+
+    .center-column
+      p Tell us a few details of what you interested in and we will contact you within 1&ndash;2 business days to talk about your project. We look forward to working with you!
+
+      form data-parsley-validate=true
+        label for='first_name' * What is your name?
+        input type='text' id='first_name' required=true data-parsley-error-message="I'm sorry, I didn't catch your name?"
+
+        label for='email' * What is your email address?
+        input type='email' id='email' required=true data-parsley-error-message="Don't worry, we will not use your email address for anything other than getting in touch with you."
 
         label for='phone' What is your phone number?
-        input type='phone' id='phone'
+        input type='tel' id='phone' class='mask-phone'
 
-        label for='project' What would you like to hire Anonymous Design to do for you?
-        textarea id='project' rows="3"
+        label for='project' * What would you like to hire Anonymous Design to do for you?
+        textarea id='project' rows='3' required=true data-parsley-error-message="Don't be shy! This is a great starting point to our conversion and gives us an idea of what you are interested in."
 
-        label for='budget' What is your budget?
-        input type='text' id='budget'
+        label for='budget' * What is your budget?
+        input type='text' id='budget' required=true data-parsley-error-message="Don't worry about being too precise; we will use this as a guideline for which of our services would be the best fit for you."
 
         label for='referral' How did you hear about Anonymous Design?
         input type='text' id='referral'
 
         input type='submit' value='Send Message'
 
-footer
+footer.footer
   .container
     p &copy; 2014 Anonymous Design

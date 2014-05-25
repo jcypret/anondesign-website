@@ -11,26 +11,18 @@
 
 .section-gray
   @extend .section
-  background grayDark
+  background rgba(grayDark, 0.95)
   color white
   text-align center
 
-  &:after
-    fullsize-after()
-    background image-url('noir-typewriter.jpeg')
-    opacity 0.05
-
 .section-white
   @extend .section
+  pattern-diagonal()
 
-.section-orage
+.section-orange
   @extend .section
-  background orange
-
-  &:after
-    fullsize-after()
-    background image-url('noir-typewriter.jpeg')
-    opacity 0.05
+  background rgba(orange, 0.95)
+  color white
 
   h2
     color white
