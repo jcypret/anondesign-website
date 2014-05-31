@@ -9,6 +9,10 @@ html
 
     == stylesheet_link_tag '//cloud.typography.com/6987452/685864/css/fonts.css', 'all'
 
+    / background video
+    == stylesheet_link_tag '//vjs.zencdn.net/4.6/video-js.css'
+    == javascript_include_tag '//vjs.zencdn.net/4.6/video.js'
+
   body class='#{page_classes}'
   	== partial :header
     == yield
