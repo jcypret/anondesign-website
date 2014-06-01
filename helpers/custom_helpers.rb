@@ -1,8 +1,13 @@
 module CustomHelpers
 
-  def svg_tag(svg_file, options = {})
-    options = { data: { no_retina: true } }.deep_merge(options)
-    image_tag svg_file, options
+  def svg_tag(file_name, options = {})
+    options = {
+      data: {
+        no_retina: true,
+        svg_fallback: asset_path(:images, "#{file_name}.png")
+      }
+    }.deep_merge(options)
+    image_tag "#{file_name}.svg", options
   end
 
 end

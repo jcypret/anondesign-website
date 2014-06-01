@@ -4,7 +4,6 @@
   "dependencies": {
     "normalize-css": "latest",
     "retina.js": "latest",
-    "svgeezy": "latest",
     "jquery.unorphan": "rstacruz/jquery.unorphan",
     "jquery-autosize": "latest",
     "jquery.maskedinput": "latest",
