@@ -7,6 +7,11 @@ html
 
     title= page_title
 
+    /[if lt IE 9]
+      == javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js'
+      == javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js'
+
+    / Custom Fonts
     == stylesheet_link_tag '//cloud.typography.com/6987452/685864/css/fonts.css', 'all'
 
     / background video
@@ -14,6 +19,6 @@ html
     == javascript_include_tag '//vjs.zencdn.net/4.6/video.js'
 
   body class='#{page_classes}'
-  	== partial :header
+    == partial :header
     == yield
     == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 'all'

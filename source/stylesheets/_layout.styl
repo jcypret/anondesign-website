@@ -3,10 +3,16 @@
   +mobile()
     center 960px 20px
 
+// http://css-tricks.com/centering-in-the-unknown/
+.vertical-ghost:before
+  content ''
+  display inline-block
+  height 100%
+  vertical-align middle
+
 .vertical-center
-  position relative
-  top 50%
-  transform translateY(-50%)
+  display inline-block
+  vertical-align middle
 
 .center-column
   column(2/3, offset: 1/6)
@@ -31,6 +37,4 @@
   position fixed !important
   min-width 100%
   min-height 100%
-  background-size cover
-  background-image url('../videos/noir-loop.jpg')
   z-index -1
