@@ -20,5 +20,8 @@ html
 
   body class='#{page_classes}'
     == partial :header
+    == partial :background_video
     == yield
+    == partial :footer
+
     == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 'all'

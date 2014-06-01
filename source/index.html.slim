@@ -2,11 +2,7 @@
 title: Website Design in Little Rock, AR
 ---
 
-video autoplay=true loop=true class='background-video' class='video-js'
-  source src='videos/noir-loop.webm' type='video/webm'
-  source src='videos/noir-loop.mp4' type='video/mp4'
-
-section.section-gray.section-full
+section.section-gray.section-full.text-center
   .container.vertical-ghost
     .vertical-center
       h1 Website design and digital marketing
@@ -56,38 +52,14 @@ section.section-white#what-we-do
 
 section.section-orange
   .container
-    h2 Hire Us
-
+    h2 Get in Touch
 
     .center-column
-      p Tell us a few details about what you are interested in and we will contact you within 1&ndash;2 business days to talk about your project. We look forward to working with you!
-
+      h3 What is the best way to contact you?
+      p #{link_to 'Send us a message!', '/contact-us'} We pride ourselves on intentional and efficient communication that makes the best use of everyone's time. We also love to meet with you on the phone to discuss new projects or certain aspects of projects that are best talked out.
       p
-        em * Required Field
+        em= link_to 'Interested in Anonymous Design doing a project for you?', '/hire-us', class: 'button'
 
-      form data-parsley-validate=true action='https://anondesign.wufoo.com/forms/szrqsik0zi47tm/#public' method='post'
-        label for='first_name' What is your name? *
-        input type='text' id='first_name' name='Field1' required=true data-parsley-error-message="I'm sorry, I didn't catch your name?"
+      h3 Where are you located?
+      p That's classified! Just kidding. We are a group of creative professionals that choose to work from home in Little Rock, AR. We work this way to be closer to our families, keep costs down, and maintain more flexible schedules.
 
-        label for='email' What is your email address? *
-        input type='email' id='email' name='Field3' required=true data-parsley-error-message="Don't worry, we will not use your email address for anything other than getting in touch with you."
-
-        label for='phone' What is your phone number?
-        input type='tel' id='phone' name='Field4' class='mask-phone'
-
-        label for='project' What would you like to hire Anonymous Design to do for you? *
-        textarea id='project' name='Field5' rows='3' required=true data-parsley-error-message="Don't be shy! This is a great starting point to our conversation and gives us an idea of what you are interested in."
-
-        label for='budget' What is your budget? *
-        input type='text' id='budget' name='Field6' required=true data-parsley-error-message="Don't worry about being too precise; we will use this as a guideline for which of our services would be the best fit for you."
-
-        label for='referral' How did you hear about Anonymous Design?
-        input type='text' id='referral' name='Field8'
-
-        input type='submit' value='Get in Touch'
-
-        input type='hidden' name='idstamp' value='UcrRWi9RVWOlqaCTspDam2XOM9TLWj3PICU5M3N5GEE='
-
-footer.footer
-  .container
-    p &copy; 2014 Anonymous Design
