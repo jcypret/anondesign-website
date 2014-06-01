@@ -12,11 +12,12 @@ section.section-gray.section-full
       h1 Website design and digital marketing
       p.subtitle We build websites, establish branding, and design things for our clients.
   div.read-more
-    | Read More
-    br
-    = svg_tag 'down-arrow.svg'
+    = link_to '#what-we-do', class: 'anchor-scroll' do
+      | Read More
+      br
+      = svg_tag 'down-arrow.svg'
 
-section.section-white
+section.section-white#what-we-do
   .container
     h2 What&nbsp;We Do
     p.lead <em>Anonymous Design</em> is a creative agency based in Little Rock, Arkansas. We have a passion for quality design and continually strive to be experts of our craft. The services we offer will help you grow your business and establish trust with your clients.
