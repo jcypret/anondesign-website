@@ -38,14 +38,16 @@ h2
     margin 20px 0
 
 h3
-  margin-top 20px
+  margin-top 30px
   font-size 30px
   color orange
   +mobile()
     font-size 25px
 
+  & + p
+    margin-top 4px
+
   & + .subtitle
-    margin-top 2px
     font-sentinal()
     color grayLight
     font-style italic
