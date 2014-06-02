@@ -4,5 +4,6 @@
 #= require jquery.maskedinput/jquery.maskedinput
 #= require parsleyjs/dist/parsley
 #= require scrollToBySpeed/scrolltobyspeed.jquery
+#= require jquery-backstretch/jquery.backstretch
 
 #= require_directory .

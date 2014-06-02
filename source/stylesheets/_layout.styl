@@ -5,7 +5,7 @@
 
 .center-column
   column(2/3, offset: 1/6)
-  +mobile()
+  +below(desktop-cutoff)
     stack()
 
 .read-more
@@ -34,16 +34,6 @@
   min-width 100%
   min-height 100%
   z-index -1
-
-.one-fourth
-  column(1/4)
-.three-fourths
-  column(3/4)
-.one-fourth,
-.three-fourths
-  +mobile()
-    stack()
-
 
 .text-center
   text-align center
