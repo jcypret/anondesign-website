@@ -19,6 +19,7 @@ html
     == javascript_include_tag '//vjs.zencdn.net/4.6/video.js'
 
   body class='#{page_classes}'
+    == partial :analytics unless development?
     == partial :header
     == partial :background_video
     == yield

@@ -6,6 +6,7 @@ gem 'middleman-bower'
 gem 'middleman-livereload'
 gem 'middleman-sprockets'
 gem 'middleman-title'
+gem 'middleman-search_engine_sitemap'
 
 gem 'slim'
 gem 'stylus'

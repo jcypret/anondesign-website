@@ -9,6 +9,9 @@ set :partials_dir, 'partials'
 activate :title, site: 'Anonymous Design'
 activate :directory_indexes
 
+set :url_root, 'http://anondesign.co'
+activate :search_engine_sitemap
+
 # Add bower_components folder to Sprockets path
 sprockets.append_path File.join(root, 'bower_components')
 
@@ -24,4 +27,5 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
+  activate :gzip
 end
