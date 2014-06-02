@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>success</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="success" sketch:type="MSArtboardGroup">
+            <ellipse id="Oval" fill="#38B219" sketch:type="MSShapeGroup" cx="31.6831683" cy="32" rx="31.6831683" ry="32"></ellipse>
+            <path d="M61.8106931,22.09408 C60.9134257,19.30816 59.6511683,16.69056 58.0765149,14.29888 L30.3429703,43.47392 L30.3987327,46.72064 L31.7078812,46.71232 L61.8106931,22.09408 L61.8106931,22.09408 Z" id="Shape" fill="#349917" sketch:type="MSShapeGroup"></path>
+            <path d="M63.414495,12.59648 L57.7647525,6.95872 C56.9935842,6.1888 55.7427327,6.1888 54.9715644,6.95872 L30.8207525,32.08384 L20.4058614,21.69024 C19.6334257,20.92032 18.3838416,20.92032 17.6120396,21.69024 L12.604198,26.688 C11.8330297,27.45728 11.8330297,28.70528 12.604198,29.47456 L29.319604,46.1536 C29.7650693,46.5984 30.3689505,46.7776 30.9493861,46.70848 C31.5298218,46.77696 32.133703,46.5984 32.5791683,46.1536 L63.414495,15.38368 C64.1856634,14.61376 64.1856634,13.3664 63.414495,12.59648 L63.414495,12.59648 Z" id="Shape" fill="#F7F7F7" sketch:type="MSShapeGroup"></path>
+            <path d="M32.5791683,46.1536 L63.414495,15.38368 C64.1856634,14.61376 64.1856634,13.3664 63.414495,12.59648 L62.4925149,11.67616 L30.7732277,43.18656 L13.304396,25.98848 L12.6048317,26.68736 C11.8336634,27.45664 11.8336634,28.70464 12.6048317,29.47392 L29.319604,46.1536 C29.7650693,46.5984 30.3689505,46.7776 30.9493861,46.70848 C31.5298218,46.7776 32.133703,46.59904 32.5791683,46.1536 L32.5791683,46.1536 Z" id="Shape" fill="#CCCCCC" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
