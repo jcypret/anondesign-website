@@ -36,6 +36,14 @@
 .section-vertical-center
   &, & .container
     height 100%
+    +below(desktop-cutoff)
+      height auto
+
+  +tablet()
+    padding 100px 0
+  +phone()
+    padding 50px 0
+
   .container
     // http://css-tricks.com/centering-in-the-unknown/
     &:before
@@ -43,6 +51,7 @@
       display inline-block
       height 100%
       vertical-align middle
+
     .vertical-content
       display inline-block
       vertical-align middle
