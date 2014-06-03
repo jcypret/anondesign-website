@@ -29,3 +29,12 @@ configure :build do
   activate :relative_assets
   activate :gzip
 end
+
+activate :deploy do |deploy|
+  deploy.method   = :sftp
+  deploy.host     = ENV['FTP_HOST']
+  deploy.path     = ENV['FTP_PATH']
+  deploy.user     = ENV['FTP_USER']
+  deploy.password = ENV['FTP_PASS']
+  deploy.build_before = true
+end

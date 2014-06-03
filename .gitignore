@@ -13,3 +13,6 @@
 
 # Ignore system files
 .DS_Store
+
+# Ignore sensitive configuration files
+.env
