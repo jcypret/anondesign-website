@@ -11,7 +11,7 @@ $ ->
 
   if Modernizr.touch || Modernizr.svg == false
     # remove video and replace with image
-    $('video').replaceWith('<div class="background-video">')
+    $('video').replaceWith('<div class="background-image">')
 
 $(window).resize ->
   setFullHeightDiv()
