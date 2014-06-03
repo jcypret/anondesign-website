@@ -1,9 +1,17 @@
+setFullHeightDiv = ->
+  $('html').height(window.innerHeight)
+
 $ ->
   $('.anchor-scroll').click (e) ->
     e.preventDefault()
     anchor = $(this).attr('href')
     $(anchor).scrollToBySpeed()
 
+  setFullHeightDiv()
+
   if Modernizr.touch || Modernizr.svg == false
-    $.backstretch $('.background-video').data('fallback-image')
-    $('.background-video').remove()
+    # remove video and replace with image
+    $('video').replaceWith('<div class="background-video">')
+
+$(window).resize ->
+  setFullHeightDiv()

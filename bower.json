@@ -9,6 +9,6 @@
     "jquery.maskedinput": "latest",
     "parsleyjs": "~2.0.0",
     "scrollToBySpeed": "latest",
-    "jquery-backstretch": "latest"
+    "background-size-polyfill": "louisremi/background-size-polyfill"
   }
 }

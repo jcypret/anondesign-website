@@ -19,9 +19,6 @@
   position: absolute
   z-index 7
 
-  +below(desktop-cutoff)
-    display none
-
   a
     display inline-block
     color white
@@ -37,6 +34,10 @@
   min-width 100%
   min-height 100%
   z-index -1
+
+  background image-url('noir-typewriter.jpg')
+  background-size cover
+  -ms-behavior: url('/polyfills/backgroundsize.min.htc')
 
 .text-center
   text-align center
