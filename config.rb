@@ -1,3 +1,15 @@
+require 'dotenv'
+Dotenv.load
+
+activate :deploy do |deploy|
+  deploy.method   = :sftp
+  deploy.host     = ENV['FTP_HOST']
+  deploy.path     = ENV['FTP_PATH']
+  deploy.user     = ENV['FTP_USER']
+  deploy.password = ENV['FTP_PASS']
+  deploy.build_before = true
+end
+
 Stylus.use('jeet', 'rupture', 'nib', 'autoprefixer-stylus')
 
 set :images_dir, 'images'
@@ -19,7 +31,7 @@ require 'helpers/custom_helpers'
 helpers CustomHelpers
 
 configure :development do
-	activate :livereload
+  activate :livereload
 end
 
 configure :build do
@@ -30,11 +42,3 @@ configure :build do
   activate :gzip
 end
 
-activate :deploy do |deploy|
-  deploy.method   = :sftp
-  deploy.host     = ENV['FTP_HOST']
-  deploy.path     = ENV['FTP_PATH']
-  deploy.user     = ENV['FTP_USER']
-  deploy.password = ENV['FTP_PASS']
-  deploy.build_before = true
-end
