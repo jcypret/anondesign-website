@@ -1,3 +1,6 @@
+require 'dotenv'
+Dotenv.load
+
 Stylus.use('jeet', 'rupture', 'nib', 'autoprefixer-stylus')
 
 set :images_dir, 'images'
@@ -28,4 +31,12 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
   activate :gzip
+end
+
+activate :deploy do |deploy|
+  deploy.method   = :sftp
+  deploy.host     = ENV['FTP_HOST']
+  deploy.path     = ENV['FTP_PATH']
+  deploy.user     = ENV['FTP_USER']
+  deploy.password = ENV['FTP_PASS']
 end
