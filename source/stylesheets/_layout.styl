@@ -5,7 +5,7 @@
 
 .center-column
   column(2/3, offset: 1/6)
-  +below(desktop-cutoff)
+  +mobile()
     stack()
 
 .read-more
@@ -53,12 +53,23 @@
 
 .grid-13,
 .grid-23
-  +below(desktop-cutoff)
+  +mobile()
     stack()
 
 .bbb-seal
   opacity: 0.95
   float right
   margin-top 5px !important
-  +below(desktop-cutoff)
+  +mobile()
     float: none
+    margin-top: 20px !important
+
+.show-mobile
+  display: none
+  +mobile()
+    display: block
+
+.hide-mobile
+  display: block
+  +mobile()
+    display: none
