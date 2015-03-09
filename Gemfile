@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~>3.3.2'
+gem 'middleman', '~> 3.3.10'
 
 gem 'middleman-bower'
 gem 'middleman-livereload'
@@ -12,7 +12,3 @@ gem 'middleman-deploy'
 gem 'slim'
 gem 'stylus'
 gem 'dotenv'
-
-# For faster file watcher updates and time zone data on Windows
-gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
-gem 'tzinfo-data', platforms: [:mswin, :mingw]
