@@ -13,7 +13,7 @@
     /[if lt IE 9]
       = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js'
 
-    = stylesheet_link_tag '//cloud.typography.com/6987452/685864/css/fonts.css', '//vjs.zencdn.net/4.6/video-js.css', 'all'
+    = stylesheet_link_tag '//cloud.typography.com/6987452/685864/css/fonts.css', 'all'
 
   %body{ class: page_classes }
     = partial :analytics unless development?
@@ -22,4 +22,4 @@
     = yield
     = partial :footer
 
-    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', '//vjs.zencdn.net/4.6/video.js', 'all'
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 'all'
