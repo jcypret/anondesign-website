@@ -4,7 +4,6 @@ Dotenv.load
 set :images_dir, 'images'
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
-set :fonts_dir, 'fonts'
 set :partials_dir, 'partials'
 
 activate :title, site: 'Anonymous Design'
@@ -29,7 +28,7 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
+  activate :asset_hash, ignore: 'videos/*'
   activate :relative_assets
   activate :gzip
 end
