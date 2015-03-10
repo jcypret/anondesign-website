@@ -1,0 +1,74 @@
+---
+title: Website Design in Little Rock, AR
+priority: 1.0
+meta_description: Anonymous Design is a creative agency based in Little Rock, Arkansas. We build websites, establish branding, and design things for our clients.
+---
+
+%section.section-gray.section-vertical-center.text-center
+  .container
+    .vertical-content
+      %h1 Website design and digital marketing
+      %p.subtitle We build websites, establish branding, and design things for our clients.
+  .read-more
+    = link_to '#what-we-do', class: 'anchor-scroll' do
+      Read More
+      %br
+      = svg_tag 'down-arrow', alt: 'Down arrow'
+
+%section.section-white#what-we-do
+  .container
+    %h2 What&nbsp;We Do
+    %p.lead
+      %em Anonymous Design
+      is a creative agency based in Little Rock, Arkansas. We have a passion for quality design and continually strive to be experts of our craft. The services we offer will help you grow your business and establish trust with your clients.
+
+    .service
+      .service-icon
+        = svg_tag 'icons/browser', alt: 'Website in a browser'
+      .service-content
+        %h3 Website Design and Development
+        %p.subtitle We create a space for you on the internet.
+        %p Websites exist to do something: grow your business, sell your products, manage your company, and so on. It is our goal to clearly identify that purpose and to build a website for you that will achieve it.
+
+    .service
+      .service-icon
+        = svg_tag 'icons/identity', alt: 'Man in a suit'
+      .service-content
+        %h3 Branding and Identity
+        %p.subtitle We make your company look good.
+        %p When someone thinks of your company, the impression that comes to their mind is your &ldquo;branding.&rdquo; Our goal is to help your company&rsquo;s identity leave a good impression that will establish trust with your clients.
+
+    .service
+      .service-icon
+        = svg_tag 'icons/brochure', alt: 'Printed brochure'
+      .service-content
+        %h3 Graphic Design and Printing
+        %p.subtitle We design brochures and print them too.
+        %p Printed designs are a great way for people to connect with your company outside of the digital space. This equals more opportunities for being noticed and helping people to understand what you have to offer.
+
+    .service
+      .service-icon
+        = svg_tag 'icons/search', alt: 'Searching the internet'
+      .service-content
+        %h3 Marketing and Search (SEO)
+        %p.subtitle We make sure people can find you.
+        %p You may have the best looking company in town, but that does not matter if no one sees it. Marketing is the process of making your company available to potential customers and keeping your current clients engaged.
+
+%section.section-orange
+  .container
+    %h2 Get in Touch
+
+    .grid-23
+      %h3 Interested in Anonymous Design doing some work for you?
+      %p That's great! We'd love to meet with you over the phone to talk about it.
+      %p= link_to 'Tell us what you are interested in', '/hire-us', class: 'button'
+
+      %h3 What is the best way to contact Anonymous Design?
+      %p We pride ourselves on intentional and efficient communication that makes the best use of everyone's time. Ask us a question and we will be quick to reply.
+      %p= link_to 'Ask us a question', '/contact-us', class: 'button'
+
+      %h3 Where is Anonymous Design located?
+      %p That's classified! Just kidding. We are a group of creative professionals that choose to work from home in Little Rock, AR. We work this way to be closer to our families, keep costs down, and maintain more flexible schedules.
+
+    .grid-13
+      = partial 'bbb_seal'

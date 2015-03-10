@@ -1,0 +1,25 @@
+!!! 5
+%html
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible' }
+    %meta{ name: 'viewport', content: 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=0' }
+    - if current_page.data.meta_description
+      %meta{ name: 'description', content: current_page.data.meta_description }
+
+    %title= page_title
+
+    = javascript_include_tag 'lib/modernizr'
+    /[if lt IE 9]
+      = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js'
+
+    = stylesheet_link_tag '//cloud.typography.com/6987452/685864/css/fonts.css', '//vjs.zencdn.net/4.6/video-js.css', 'all'
+
+  %body{ class: page_classes }
+    = partial :analytics unless development?
+    = partial :header
+    = partial :background_video
+    = yield
+    = partial :footer
+
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', '//vjs.zencdn.net/4.6/video.js', 'all'
