@@ -1,5 +1,5 @@
 #= require retina.js/dist/retina
-#= require jquery-autosize/dest/autosize
+#= require jquery-autosize/jquery.autosize
 #= require jquery.unorphan/jquery.unorphan
 #= require jquery.maskedinput/dist/jquery.maskedinput
 #= require parsleyjs/dist/parsley
