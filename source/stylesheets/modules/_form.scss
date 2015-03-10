@@ -1,0 +1,74 @@
+form {
+  margin: 30px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0 20px;
+  transition: all 0.25s ease-in-out;
+  opacity: 0.9;
+  background: $white;
+  color: $gray;
+
+  box-shadow: inset 1px 1px 2px rgba($gray, 0.1);
+  border-radius: 2px;
+
+  &:focus {
+    background: $white-true;
+  }
+
+  &.parsley-error {
+    background: $red;
+    color: $white;
+
+    &:focus {
+      background: $red-light;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  background: $white;
+  color: $gray;
+
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  @include font-knockout();
+  font-size: 25px;
+
+  box-shadow: 1px 1px 2px rgba($gray, 0.1);
+  border-radius: 2px;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background: $white-true;
+  }
+}
+
+label {
+  color: $white;
+  font-size: 14px;
+}
+
+.parsley-errors-list {
+  margin: -15px 0 20px;
+  padding: 0;
+  list-style: none;
+
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.4;
+  color: $gray-light;
+}

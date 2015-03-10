@@ -1,0 +1,65 @@
+.section {
+  padding: 40px 0;
+  position: relative;
+
+  *:first-child {
+    margin-top: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.section-gray {
+  @extend .section;
+  background: image-url('color-gray.png');
+  background: rgba($gray-dark, 0.95);
+  color: $white;
+
+  a {
+    color: inherit;
+  }
+}
+
+.section-white {
+  @extend .section;
+  @include pattern-diagonal();
+}
+
+.section-orange {
+  @extend .section;
+  background: image-url('color-orange.png');
+  background: rgba($orange-dark, 0.95);
+  color: $white;
+
+  h2, h3, a {
+    color: $white;
+  }
+}
+
+.section-full {
+  min-height: 100%;
+}
+
+// http://css-tricks.com/centering-in-the-unknown/
+.section-vertical-center {
+  height: 100%;
+
+  .container {
+    height: 100%;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .vertical-content {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,12 +1,7 @@
 {
-  "name": "middleman-noir",
-  "version": "0.0.0",
+  "name": "anondesign",
+  "version": "0.0.1",
   "dependencies": {
-      "stylus": "latest",
-      "nib": "latest",
-      "jeet": "latest",
-      "rupture": "latest",
-      "bower": "latest",
-      "autoprefixer-stylus": "latest"
+    "bower": "latest"
   }
 }

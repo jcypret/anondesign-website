@@ -1,0 +1,20 @@
+.button {
+  border: 1px solid $white;
+  border-radius: 2px;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+
+  @include font-knockout();
+  text-decoration: none;
+  font-size: 25px;
+
+  &:hover {
+    background: $white;
+    color: $orange;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 21px;
+  }
+}

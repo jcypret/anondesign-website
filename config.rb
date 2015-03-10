@@ -1,8 +1,6 @@
 require 'dotenv'
 Dotenv.load
 
-Stylus.use('jeet', 'rupture', 'nib', 'autoprefixer-stylus')
-
 set :images_dir, 'images'
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -10,13 +8,16 @@ set :fonts_dir, 'fonts'
 set :partials_dir, 'partials'
 
 activate :title, site: 'Anonymous Design'
-activate :directory_indexes
 
 set :url_root, 'http://anondesign.co'
 activate :search_engine_sitemap
 
-# Add bower_components folder to Sprockets path
 sprockets.append_path File.join(root, 'bower_components')
+
+activate :directory_indexes
+activate :autoprefixer do
+  config.browsers = ['last 2 versions', '> 1%']
+end
 
 require 'helpers/custom_helpers'
 helpers CustomHelpers

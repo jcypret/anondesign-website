@@ -1,0 +1,23 @@
+.service {
+  @include column(1/2, $cycle: 2);
+  margin-top: 20px;
+
+  @include breakpoint($mobile) {
+    @include stack();
+    float: none !important;
+    margin-top: 10px;
+  }
+
+  .service-icon {
+    @include column(1/5 1/2);
+    padding-top: 5px;
+  }
+
+  .service-content {
+    @include column(4/5 1/2);
+
+    p:last-child {
+      margin-top: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.header {
+  @include pattern-diagonal();
+  height: $header-height;
+  margin-top: -$header-height;
+  position: relative;
+  z-index: 5;
+
+  .logo {
+    margin-top: 10px;
+    display: block;
+    float: left;
+  }
+}
