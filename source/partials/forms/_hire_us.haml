@@ -1,22 +1,22 @@
 = form_tag 'https://anondesign.wufoo.com/forms/szrqsik0zi47tm/#public', method: 'post', data: { parsley_validate: true } do
 
-  = label_tag :Field1, caption: 'What is your name? *'
-  = text_field_tag :Field1, required: true, data: { parsley_error_message: "I'm sorry, I didn't catch your name?" }
+  = label_tag :name, caption: 'What is your name? *'
+  = text_field_tag :Field1, id: :name, required: true, data: { parsley_error_message: "I'm sorry, I didn't catch your name?" }
 
-  = label_tag :Field3, caption: 'What is your email address? *'
-  = email_field_tag :Field3, required: true, data: { parsley_error_message: "Don't worry, we will not use your email address for anything other than getting in touch with you." }
+  = label_tag :email, caption: 'What is your email address? *'
+  = email_field_tag :Field3, id: :email, required: true, data: { parsley_error_message: "Don't worry, we will not use your email address for anything other than getting in touch with you." }
 
-  = label_tag :Field4, caption: 'What is your phone number?'
-  = telephone_field_tag :Field4, class: 'mask-phone'
+  = label_tag :phone, caption: 'What is your phone number?'
+  = telephone_field_tag :Field4, id: :phone, class: 'mask-phone'
 
-  = label_tag :Field5, caption: 'What are you interested in Anonymous Design doing for you? *'
-  = text_area_tag :Field5, required: true, rows: 3, data: { parsley_error_message: "Don't be shy! This is a great starting point to our conversation and gives us an idea of what you are interested in." }
+  = label_tag :project, caption: 'What are you interested in Anonymous Design doing for you? *'
+  = text_area_tag :Field5, id: :project, required: true, rows: 3, data: { parsley_error_message: "Don't be shy! This is a great starting point to our conversation and gives us an idea of what you are interested in." }
 
-  = label_tag :Field6, caption: 'What is your budget? *'
-  = text_field_tag :Field6, required: true, data: { parsley_error_message: "Don't worry about being too precise; we will use this as a guideline for which of our services would be the best fit for you." }
+  = label_tag :budget, caption: 'What is your budget? *'
+  = text_field_tag :Field6, id: :budget, required: true, data: { parsley_error_message: "Don't worry about being too precise; we will use this as a guideline for which of our services would be the best fit for you." }
 
-  = label_tag :Field8, caption: 'How did you hear about Anonymous Design?'
-  = text_field_tag :Field8
+  = label_tag :referral, caption: 'How did you hear about Anonymous Design?'
+  = text_field_tag :Field8, id: :referral
 
   = submit_tag 'Get in Touch'
   = hidden_field_tag 'idstamp', value: 'UcrRWi9RVWOlqaCTspDam2XOM9TLWj3PICU5M3N5GEE='
