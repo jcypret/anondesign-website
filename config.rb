@@ -14,8 +14,9 @@ activate :search_engine_sitemap
 sprockets.append_path File.join(root, 'bower_components')
 
 activate :directory_indexes
-activate :autoprefixer do
+activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', '> 1%']
+  config.ignore = ['fonts/*']
 end
 
 require 'helpers/custom_helpers'
@@ -26,9 +27,9 @@ configure :development do
 end
 
 configure :build do
-  activate :minify_css
+  activate :minify_css, ignore: ['fonts/*']
   activate :minify_javascript
-  activate :asset_hash, ignore: 'videos/*'
+  activate :asset_hash, ignore: ['videos/*', 'fonts/*']
   activate :relative_assets
   activate :gzip
 end
