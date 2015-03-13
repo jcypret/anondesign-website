@@ -12,9 +12,6 @@
   = label_tag :project, caption: 'What are you interested in Anonymous Design doing for you? *'
   ~ text_area_tag :Field5, id: :project, required: true, rows: 3, data: { parsley_error_message: "Don't be shy! This is a great starting point to our conversation and gives us an idea of what you are interested in." }
 
-  = label_tag :budget, caption: 'What is your budget? *'
-  = text_field_tag :Field6, id: :budget, required: true, data: { parsley_error_message: "Don't worry about being too precise; we will use this as a guideline for which of our services would be the best fit for you." }
-
   = label_tag :referral, caption: 'How did you hear about Anonymous Design?'
   = text_field_tag :Field8, id: :referral
 
