@@ -10,7 +10,7 @@
   = telephone_field_tag :Field4, id: :phone, class: 'mask-phone'
 
   = label_tag :message, caption: 'What can we help you with? *'
-  = text_area_tag :Field5, id: :message, required: true, rows: 3, data: { parsley_error_message: "Don't be shy! This is a great starting point to our conversation and gives us an idea of what you are interested in." }
+  ~ text_area_tag :Field5, id: :message, required: true, rows: 3, data: { parsley_error_message: "Don't be shy! This is a great starting point to our conversation and gives us an idea of what you are interested in." }
 
   = submit_tag 'Send Message'
   = hidden_field_tag 'idstamp', value: 'KWCNxXkUF6sbpQStuPonfn0dFA9vv5V9NCi3Gxmfw3A='
