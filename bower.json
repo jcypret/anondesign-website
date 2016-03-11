@@ -10,6 +10,7 @@
     "parsleyjs": "~2.0.0",
     "scrollToBySpeed": "~0.3.0",
     "vide": "~0.3.1",
-    "autosize": "~2.0.0"
+    "autosize": "~2.0.0",
+    "jeet": "^6.1.2"
   }
 }
